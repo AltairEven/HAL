@@ -6,7 +6,7 @@
 
 **Architecture:** Bottom-up construction of Layer 1. All components are decoupled through protocols and the event bus. The Bus uses a pluggable backend pattern (Protocol → InMemoryBus). Artifacts are immutable dataclasses with authority enforcement. The AgentDriver is a pure protocol — no implementation in this plan (MockDriver is in Plan 4).
 
-**Tech Stack:** Python 3.12+, asyncio, dataclasses, PyYAML, pytest, pytest-asyncio
+**Tech Stack:** Python 3.9+, asyncio, dataclasses, PyYAML, pytest, pytest-asyncio
 
 **Spec:** `docs/superpowers/specs/2026-04-27-hal-design.md` — Layer 1: Core Kernel
 
@@ -74,7 +74,7 @@ build-backend = "hatchling.build"
 name = "hal"
 version = "0.1.0"
 description = "HAL — A general-purpose AI agent coordination framework"
-requires-python = ">=3.12"
+requires-python = ">=3.9"
 dependencies = [
     "pyyaml>=6.0",
 ]

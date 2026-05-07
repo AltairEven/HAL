@@ -6,7 +6,7 @@
 
 **Architecture:** ClaudeCodeDriver implements the AgentDriver protocol, delegating LLM execution to Claude Code. It translates HAL's context (Working Memory, SandboxedTools, system prompt, constraints) into Claude Code SDK calls, and maps results back into DriverResult. This plan starts with an SDK discovery spike to resolve open questions before implementation.
 
-**Tech Stack:** Python 3.12+, Claude Agent SDK, pytest, pytest-asyncio
+**Tech Stack:** Python 3.9+, Claude Agent SDK, pytest, pytest-asyncio
 
 **Spec:** `docs/superpowers/specs/2026-04-27-hal-design.md` — ClaudeCodeDriver section in Layer 1
 

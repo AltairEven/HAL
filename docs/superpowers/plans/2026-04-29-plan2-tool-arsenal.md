@@ -6,7 +6,7 @@
 
 **Architecture:** Tools implement a unified protocol (execute/validate/rollback). The ToolRegistry stores tool definitions by name. The ToolLoader resolves three-tier config (preset toolkit → additive/subtractive → custom) into a set of tools for a role. SandboxedTool wraps each tool transparently, enforcing validation, risk-level confirmation (PENDING for high-risk), and audit events.
 
-**Tech Stack:** Python 3.12+, asyncio, pytest, pytest-asyncio
+**Tech Stack:** Python 3.9+, asyncio, pytest, pytest-asyncio
 
 **Spec:** `docs/superpowers/specs/2026-04-27-hal-design.md` — Layer 2: Tool Arsenal
 

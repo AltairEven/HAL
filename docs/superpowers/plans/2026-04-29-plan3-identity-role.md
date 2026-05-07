@@ -6,7 +6,7 @@
 
 **Architecture:** A RoleProfile dataclass encapsulates identity, boundaries, knowledge, concurrency, safeguards, memory, and tools config — all parsed from YAML. The PromptBuilder constructs the system prompt by combining persona, boundaries, context docs, and dynamically injected memories. Tool filtering is driven by the role's tools config via the ToolLoader from Plan 2.
 
-**Tech Stack:** Python 3.12+, PyYAML, pytest
+**Tech Stack:** Python 3.9+, PyYAML, pytest
 
 **Spec:** `docs/superpowers/specs/2026-04-27-hal-design.md` — Layer 3: Identity & Role
 

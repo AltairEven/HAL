@@ -6,7 +6,7 @@
 
 **Architecture:** AgentService wraps an Agent with an ordered task queue and manages task lifecycle. Leader Agent tools are regular HAL tools loaded via role config. ClusterRouter is a lightweight async service with deterministic routing rules and HTTP/WebSocket Human interface. All communication goes through HAL Bus.
 
-**Tech Stack:** Python 3.12+, asyncio, aiohttp, pytest, pytest-asyncio
+**Tech Stack:** Python 3.9+, asyncio, aiohttp, pytest, pytest-asyncio
 
 **Spec:** `docs/superpowers/specs/2026-04-27-hal-design.md` — Layer 5: Cluster Management, Deployment
 

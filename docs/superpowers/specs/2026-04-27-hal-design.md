@@ -930,7 +930,7 @@ Pluggable backends, same pattern as Checkpoint: InMemoryStore (testing), SQLiteS
 |----------|--------|-----------|
 | Agent execution | AgentDriver protocol | Delegate to battle-tested SDKs; HAL focuses on coordination |
 | Implementation | From scratch | Full control, no framework coupling, lightweight |
-| Language | Python 3.12+ | Mature AI/Agent ecosystem |
+| Language | Python 3.9+ | Mature AI/Agent ecosystem |
 | Async framework | asyncio | Python stdlib, mature ecosystem |
 | Message queue | InMemoryBus (pluggable, Redis Streams ready) | Start simple; Bus Protocol enables future distributed backends without code changes |
 | HTTP framework | aiohttp or FastAPI | ClusterRouter's Human interface |

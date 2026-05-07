@@ -6,7 +6,7 @@
 
 **Architecture:** TaskRunner is a thin orchestrator: prepare context → call Driver → post-execution (memory, checkpoint, safeguards) → handle result status. Working Memory holds opaque conversation history. Checkpoint persists full task state for suspend/resume. Safeguards track cumulative steps/cost. MockDriver implements the AgentDriver protocol with configurable behaviors for testing.
 
-**Tech Stack:** Python 3.12+, asyncio, sqlite3 (stdlib), pytest, pytest-asyncio
+**Tech Stack:** Python 3.9+, asyncio, sqlite3 (stdlib), pytest, pytest-asyncio
 
 **Spec:** `docs/superpowers/specs/2026-04-27-hal-design.md` — Layer 4: Task Runner
 

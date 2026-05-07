@@ -6,7 +6,7 @@
 
 **Architecture:** Episodic and Shared Memory share a common MemoryEntry model and storage interface (InMemory + SQLite backends). Retrieval is tag-based (V1). Hygiene runs lazily at retrieval time (confidence decay) and on write (consolidation, cap eviction). Driver-reported lessons are routed by scope (episodic/shared) with confidence caps.
 
-**Tech Stack:** Python 3.12+, sqlite3 (stdlib), pytest
+**Tech Stack:** Python 3.9+, sqlite3 (stdlib), pytest
 
 **Spec:** `docs/superpowers/specs/2026-04-27-hal-design.md` — Memory System
 
